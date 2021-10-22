@@ -26,7 +26,7 @@ def threeSum(self, nums: List[int]) -> List[List[int]]:
             else:
                 res.append([a, nums[l], nums[r]])
                 # for each a there can be multiple solutions
-                # increase left pointer to search for the a new solution -c = a + nums[l]
+                # increase left pointer to search for a new solution -c = a + nums[l]
                 l += 1
                 while nums[l] == nums[l - 1] and l < r:
                     l += 1
